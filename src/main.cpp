@@ -13,8 +13,13 @@
 #define W5500_MOSI 11
 #define W5500_SCK  13
 
-byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
-IPAddress ip(192, 168, 1, 177);
+byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED }; //Bol 1
+//byte mac[] = { 0xDE, 0xBD, 0xBE, 0xEF, 0xFE, 0xED }; //Bol 2
+//byte mac[] = { 0xDE, 0xCD, 0xBE, 0xEF, 0xFE, 0xED }; //Bol 3
+
+IPAddress ip(192, 168, 0, 51); //Bol 1
+//IPAddress ip(192, 168, 0, 52); //Bol 2
+//IPAddress ip(192, 168, 0, 53); //Bol 3
 
 EthernetUDP Udp;
 
